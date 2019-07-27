@@ -17,13 +17,14 @@
 
 html, body{
   font-family: "Proxima Nova";
+  min-height: 100%;
 }
 
 #landing{
   position: relative;
-  height: 100vh;
+  height: 100%;
   background-image: linear-gradient(to right bottom, #bb4356, #9b4267, #75446b, #524260, #3b3c4b);
-  overflow: hidden;
+overflow: hidden;
 }
 
 #landing #particles-js{  
@@ -46,6 +47,7 @@ top: 0px;
 height: 100%;
 width: 100%;
 background: linear-gradient(to right bottom, gray,gray 33%,transparent);
+overflow: hidden;
 }
 
 .container{
@@ -151,17 +153,21 @@ box-shadow: 0px 6px 0px #b38833, 0px 3px 15px rgba(0,0,0,.4);
 @media(max-width:639px){
 
   #landing .container{
+    flex-direction: row-reverse;
     padding-top: 60px;
     flex-direction: column;
     justify-content: center;
   }
 
   #landing .container .pb{
+    order: 1;
     margin: 0 60px;
   }
 
   #landing .container .text{
+    width: 260px;
     margin-bottom: 60px;
+    order: 2;
   }
 
   #landing .container .text h1{
@@ -170,6 +176,10 @@ box-shadow: 0px 6px 0px #b38833, 0px 3px 15px rgba(0,0,0,.4);
   #landing .container .text h2{
     font-size: 20px;
   }
+  #landing .container .text p{
+    width:100%;
+  }
+  
 }
 
 @media(max-height:411px){
