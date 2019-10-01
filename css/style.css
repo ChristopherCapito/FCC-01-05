@@ -202,7 +202,7 @@ body {
 }
 
 .project-tile .project-text a {
-  color:var(--light-color);
+  color: var(--light-color);
   text-decoration: none;
   padding: 1rem;
   background-color: var(--primary-color);
